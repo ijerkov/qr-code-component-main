@@ -1,0 +1,57 @@
+
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-primary-300: hsl(212, 45%, 89%);
+    --color-primary-500: hsl(216, 15%, 48%);
+    --color-primary-900: hsl(218, 44%, 22%);
+
+
+    --spacing: 1rem;
+    --card-border-radius: calc(1.25 * var(--spacing));
+    --card-padding: var(--spacing);
+    --card-width: 20rem;
+
+    --text-size: 0.938rem;
+    --text-size-h2: calc(1.467 * var(--text-size));
+
+}
+
+body {
+    background: var(--color-primary-300);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--text-size);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.qr_code_component {
+    width: var(--card-width);
+    padding: var(--card-padding);
+    background: white;
+    border-radius: var(--card-border-radius);
+}
+
+.qr_code_component img {
+    border-radius: calc(var(--card-border-radius) / 2);
+    margin-bottom: calc(1.5 * var(--spacing));
+}
+
+.qr_code_component h2 {
+    line-height: 120%;
+    margin-bottom: var(--spacing);
+    font-size: var(--text-size-h2);
+    color: var(--color-primary-900);
+}
+
+.qr_code_component p {
+    padding: 0 1em;
+    margin-bottom: calc(1.5 * var(--spacing));
+    line-height: 140%;
+    color: var(--color-primary-500);
+}
